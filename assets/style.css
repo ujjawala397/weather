@@ -1,0 +1,140 @@
+:root {
+    --text-primary: #5e5e5e;
+    --text-secondary: #595959;
+    --border-color: #c3c3c3;
+    --bg-primary-color: #26ccff;
+    --bg-secondary-color: #4dd8e4fa;
+    --border-radius-primary: 5px;
+    --border-radius-secondary: 5px;
+  }
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Alkalami';
+    
+  }
+
+
+.flex {
+    display: flex;
+  }
+  
+  .flex_col {
+    flex-direction: column;
+  }
+  
+  
+  .flex_start {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+.header {
+    padding: 10px 20px;
+    background-color: var(--bg-primary-color);
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    text-align: center;
+  }
+
+.container {
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+  }
+
+
+.result_wrapper {
+    width: 60%;
+    gap: 20px;
+    padding: 10px 0;
+  }
+
+.search_wrapper {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+  }
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+
+.form label {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+.form input[type="text"] {
+    width: 100%;
+    font-size: 16px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-primary);
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: rgb(139, 139, 139);
+  }
+
+.search_history {
+    width: 100%;
+    gap: 10px;
+  }
+
+.city_info {
+    font-size: 28px;
+    align-items: center;
+    gap: 10px;
+  }
+
+.current_status {
+    width: 100%;
+    gap: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-primary);
+    padding: 15px;
+  }
+
+.future_forecast {
+    width: 100%;
+    gap: 10px;
+  }
+
+
+.card_wrapper {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+
+i {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .future_forecast{
+    margin: 40px;
+  }

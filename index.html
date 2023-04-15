@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Libre+Baskerville&family=Space+Mono&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+        integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <title>Weather Pro</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="header">Weather Pro Dashboard</h1>
+    </header>
+    <main>
+        <section class="container flex flex_start">
+            <div class="search_wrapper">
+                <form class="form">
+                    <label for="search_box">Search for a City:</label>
+                    <input type="text" id="city-input" placeholder="Search">
+                    <button id="search_btn">Search Now</button>
+                </form>
+                <div class="divider"></div>
+                <div class="search_history flex flex_col"></div>
+            </div>
+            <div class="result_wrapper flex flex_col align-center">
+                <div class="current_status flex flex_col">
+                    <h2 class="city_info flex">
+                        <div class="weather_icon">
+                            <i aria-hidden="true"></i>
+                        </div>
+                    </h2>
+                    <p class="info temp">Temp:</p>
+                    <p class="info wind">Wind:</p>
+                    <p class="info humidity">Humidity:</p>
+                </div>
+                <div class="future_forecast flex flex_col">
+                    <h3 class="title">5-Day Forecast</h3>
+                    <div class="forecast_wrapper flex">
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <script src="./assets/script.js"></script>
+</body>
+
+</html>
